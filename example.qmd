@@ -1,0 +1,36 @@
+---
+title: "Fn-ref Example"
+filters:
+  - fn-ref
+format:
+  pdf:
+    include-in-header:
+      text: |
+        \usepackage{lipsum}
+---
+
+This extension offers the ability to cross-reference footnotes using markdown syntax. The markdown syntax is simple: add the anchor to the footnotes using `[]{#fn-label}` and then cite using `@fn-label`.[^1] See, for example, footnote @fn-label3.
+
+```
+See footnote @fn-label3; and then take a look at @fn-label2;
+finally, @fn-label1 has great content.
+```
+
+See footnote @fn-label3; and then take a look at footnote @fn-label2;
+finally, footnote @fn-label1 has great content.
+
+\lipsum[1-8]
+
+The only supported format is LaTeX/PDF, but HTML will also produce a link to the correct footnote without, however, using the correct label. This is a temporary solution until Pandoc supports cross-referencing footnotes in HTML.[^2]
+
+\lipsum[1-8]
+
+This next footnote will be right in the body of the text^[[]{#fn-label3} This is an inline pandoc markdown footnote.].
+
+
+[^1]: []{#fn-label1} The footnote label should come at the begining.
+
+[^2]: []{#fn-label2} Another splendid footnote, full of relevant content.
+
+
+
