@@ -2,7 +2,7 @@
 
 A temporary solution for cross-referencing footnotes in LaTeX and HTML with Pandoc and Quarto.
 
-Please see: [1](https://github.com/shafayetShafee/nameref/issues/2 and https://stackoverflow.com/questions/76030546/how-to-cross-reference-footnotes-and-page-numbers-in-quarto-pdf), [2](https://github.com/shafayetShafee/nameref/issues/2)
+Please see: [1](https://stackoverflow.com/questions/76030546/how-to-cross-reference-footnotes-and-page-numbers-in-quarto-pdf), [2](https://github.com/shafayetShafee/nameref/issues/2)
 
 This extension offers the ability to cross-reference footnotes using markdown syntax. The markdown syntax is simple: add the anchor to the footnotes using `[]{#fn-label}` and then cite using `@fn-label`.
 
